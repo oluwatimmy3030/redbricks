@@ -32,10 +32,10 @@ const differentiators = [
 export default function About() {
   return (
     <>
-      <Hero
+<Hero
         title="About Redbricks"
-        subtitle="We're a property sourcing and investment intermediary connecting property owners, buyers, and investors across the UK."
-        backgroundImage="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1920&q=80"
+        subtitle="Established property specialists helping homeowners sell fast and investors build portfolios. 30+ years experience, £20m+ completions."
+        backgroundImage="https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?w=1920&q=80"
       />
 
       <section className="section container" aria-labelledby="intro-heading">

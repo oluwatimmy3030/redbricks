@@ -93,10 +93,10 @@ export default function PropertyFinders() {
     <>
       <Hero
         title="Property Finder Programme"
-        subtitle="Earn referral fees by introducing property opportunities to Redbricks. Use your local knowledge and network to source deals — we handle the rest."
+        subtitle="Earn £500-£1,500 per referral introducing property opportunities. Free training, no experience needed, flexible hours."
         ctaPrimary={{ label: 'Join as a Property Finder', href: '#register-form' }}
         ctaSecondary={{ label: 'Learn More About the Programme', href: '#how-it-works' }}
-        backgroundImage="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1920&q=80"
+        backgroundImage="https://images.unsplash.com/photo-1600585154526-990dced4fe0d?w=1920&q=80"
       />
 
       <section className="section container" aria-labelledby="what-is-heading">

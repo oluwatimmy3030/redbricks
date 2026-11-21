@@ -1,26 +1,14 @@
 import { useState } from 'react';
-import { ChevronDown, Search, Filter } from 'lucide-react';
+import { ChevronDown, Search } from 'lucide-react';
 import Hero from '../components/Hero';
 import FAQAccordion from '../components/FAQAccordion';
 import { getAllFAQs, getAllFAQCategories, getFAQsByCategory } from '../data/faqs';
-
-const categoryIcons = {
-  'Selling a Property': 'Home',
-  'Buying a Property': 'Key',
-  'Property Investment': 'PiggyBank',
-  'Landlord Solutions': 'Building2',
-  'Property Finders': 'Users',
-  'General Questions': 'HelpCircle'
-};
 
 const allFAQs = getAllFAQs();
 const categories = getAllFAQCategories();
 
 export default function FAQ() {
   const [searchQuery, setSearchQuery] = useState('');
-  const [expandedCategories, setExpandedCategories] = useState(
-    categories.reduce((acc, cat) => ({ ...acc, [cat]: true }), {})
-  );
 
   const filteredFAQs = allFAQs.filter(faq =>
     faq.question.toLowerCase().includes(searchQuery.toLowerCase()) ||
@@ -38,16 +26,11 @@ export default function FAQ() {
     return acc;
   }, {});
 
-  const toggleCategory = (category) => {
-    setExpandedCategories(prev => ({ ...prev, [category]: !prev[category] }));
-  };
-
   return (
     <>
       <Hero
         title="Frequently Asked Questions"
-        subtitle="Find answers to common questions about our services. Can't find what you're looking for? <a href='/contact' className='underline hover:text-secondary'>Contact us</a>."
-        backgroundImage="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1920&q=80"
+        backgroundImage="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1920&q=80"
       />
 
       <section className="section container" aria-labelledby="faq-heading">
@@ -82,28 +65,9 @@ export default function FAQ() {
                 if (!faqs) return null;
 
                 return (
-                  <details
-                    key={category}
-                    className="bg-surface rounded-xl border border-border overflow-hidden"
-                    open={expandedCategories[category]}
-                    onToggle={() => toggleCategory(category)}
-                  >
-                    <summary className="flex items-center justify-between p-5 cursor-pointer list-none focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary focus-visible:ring-offset-2">
-                      <div className="flex items-center gap-3">
-                        <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
-                          <ChevronDown className="w-5 h-5" aria-hidden="true" />
-                        </div>
-                        <div>
-                          <h3 className="text-lg font-semibold text-primary">{category}</h3>
-                          <p className="text-sm text-text-muted">{faqs.length} question{faqs.length !== 1 ? 's' : ''}</p>
-                        </div>
-                      </div>
-                      <ChevronDown className={`w-5 h-5 text-text-muted transition-transform ${expandedCategories[category] ? 'rotate-180' : ''}`} aria-hidden="true" />
-                    </summary>
-                    <div className="px-5 pb-5 animate-slide-down">
-                      <FAQAccordion faqs={faqs} allowMultiple />
-                    </div>
-                  </details>
+                  <div key={category} className="bg-surface rounded-xl border border-border overflow-hidden">
+                    <FAQAccordion faqs={faqs} allowMultiple categoryTitle={category} />
+                  </div>
                 );
               })}
             </div>

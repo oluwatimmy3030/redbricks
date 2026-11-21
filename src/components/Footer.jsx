@@ -1,5 +1,5 @@
 import { Link as RouterLink } from 'react-router-dom';
-import { Mail, Phone, MapPin, Link as LinkIcon, MessageSquare, Users, Home, Building2, Star, FileText, Shield } from 'lucide-react';
+import { Mail, Phone, MapPin, Link as LinkIcon, MessageSquare, Users, Home, Building2, Star, FileText, Shield, Scale } from 'lucide-react';
 import { siteConfig } from '../config/siteConfig';
 
 const Footer = () => {
@@ -109,6 +109,12 @@ const Footer = () => {
                 </RouterLink>
               ))}
             </nav>
+          </div>
+          
+          <div className="mt-8 pt-8 border-t border-primary-light">
+            <p className="text-text-light text-sm max-w-4xl">
+              <strong className="text-surface">Important Disclaimer:</strong> We are a property solutions and investment firm that specialises in finding value-added property opportunities and executing on those opportunities to revitalise our community, create thriving income properties, and to partner with qualified investors to help them participate in this market. This is not a solicitation. Investment is offered only to qualified investors through a written Investment Agreement.
+            </p>
           </div>
         </div>
       </div>

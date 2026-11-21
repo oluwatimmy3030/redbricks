@@ -11,7 +11,7 @@ export default function PrivacyPolicy() {
       <Hero
         title="Privacy Policy"
         subtitle={`How we collect, use, and protect your personal information. Last updated: ${lastUpdated}`}
-        backgroundImage="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1920&q=80"
+        backgroundImage="https://images.unsplash.com/photo-1600585154526-990dced4fe0d?w=1920&q=80"
       />
 
       <section className="section container" aria-labelledby="policy-heading">

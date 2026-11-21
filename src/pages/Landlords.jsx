@@ -93,7 +93,7 @@ export default function Landlords() {
         subtitle="Whether you have one property or a portfolio, we help landlords find quality tenants and navigate the letting process with confidence."
         ctaPrimary={{ label: 'Submit Property Details', href: '#enquiry-form' }}
         ctaSecondary={{ label: 'View Tenant Requirements', href: '/buy-property' }}
-        backgroundImage="https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=1920&q=80"
+        backgroundImage="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=1920&q=80"
       />
 
       <section className="section container" aria-labelledby="intro-heading">

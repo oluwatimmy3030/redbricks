@@ -9,7 +9,8 @@ const Navbar = () => {
   const [openDropdown, setOpenDropdown] = useState(null);
   const [isScrolled, setIsScrolled] = useState(false);
   const location = useLocation();
-  const dropdownTimeoutRef = useRef(null);
+  const dropdownRef = useRef(null);
+  const navRef = useRef(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -24,22 +25,23 @@ const Navbar = () => {
     setOpenDropdown(null);
   }, [location.pathname]);
 
+  // Click outside to close dropdown (desktop)
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (openDropdown && navRef.current && !navRef.current.contains(event.target)) {
+        setOpenDropdown(null);
+      }
+    };
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, [openDropdown]);
+
   const toggleDropdown = (label) => {
     setOpenDropdown(openDropdown === label ? null : label);
   };
 
   const handleMobileDropdown = (label) => {
     setOpenDropdown(openDropdown === label ? null : label);
-  };
-
-  const startCloseDropdown = () => {
-    dropdownTimeoutRef.current = setTimeout(() => setOpenDropdown(null), 300);
-  };
-
-  const cancelCloseDropdown = () => {
-    if (dropdownTimeoutRef.current) {
-      clearTimeout(dropdownTimeoutRef.current);
-    }
   };
 
   const isActive = (href) => {
@@ -56,24 +58,27 @@ const Navbar = () => {
           aria-hidden="true"
         />
       )}
-      <nav className="container relative z-50" aria-label="Main navigation">
+      <nav ref={navRef} className="container relative z-50" aria-label="Main navigation">
         <div className="flex items-center justify-between h-16 lg:h-20">
           <Link to="/" className="flex items-center gap-2" aria-label="Redbricks Home">
-            <div className="w-10 h-10 rounded-lg bg-secondary flex items-center justify-center">
+            <div className="w-10 h-10 rounded-lg bg-secondary flex items-center justify-center flex-shrink-0">
               <Home className="w-6 h-6 text-surface" aria-hidden="true" />
             </div>
-            <span className="text-xl font-bold text-primary hidden sm:block">{siteConfig.name}</span>
+            <span className="text-xl font-bold text-primary">{siteConfig.name}</span>
           </Link>
 
           <div className="hidden lg:flex items-center gap-1">
             {siteConfig.navigation.main.map((item, index) => (
-              <div key={index} className="relative" onMouseEnter={cancelCloseDropdown} onMouseLeave={startCloseDropdown}>
+              <div
+                key={index}
+                className="relative"
+                ref={item.dropdown ? dropdownRef : null}
+              >
                 {item.dropdown ? (
                   <div className="relative">
                     <button
                       onClick={() => toggleDropdown(item.label)}
-                      onMouseEnter={cancelCloseDropdown}
-                      onMouseLeave={startCloseDropdown}
+                      onMouseEnter={() => setOpenDropdown(item.label)}
                       className={`flex items-center gap-1.5 px-4 py-2.5 rounded-lg text-sm font-medium transition-colors ${
                         isActive(item.href) ? 'text-secondary' : 'text-text hover:text-primary'
                       }`}
@@ -87,8 +92,7 @@ const Navbar = () => {
                       <div
                         className="absolute top-full left-0 mt-2 w-56 bg-surface rounded-xl shadow-xl border border-border py-2 animate-slide-down"
                         role="menu"
-                        onMouseEnter={cancelCloseDropdown}
-                        onMouseLeave={startCloseDropdown}
+                        onMouseEnter={() => setOpenDropdown(item.label)}
                       >
                         {item.dropdown.map((subItem, subIndex) => (
                           <Link

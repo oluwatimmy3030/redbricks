@@ -8,14 +8,11 @@ import Button from '../components/Button';
 import FormField from '../components/FormField';
 import Select from '../components/Select'
 import Checkbox from '../components/Checkbox';
-import PropertyCard from '../components/PropertyCard';
 import { useForm } from '../hooks/useForm';
 import { getFAQsByCategory } from '../data/faqs';
 import { propertyTypes, purchasePurposes } from '../config/siteConfig';
-import { getPropertiesByCategory } from '../data/properties';
 
 const buyFAQs = getFAQsByCategory('Buying a Property');
-const featuredProperties = getPropertiesByCategory('buy').slice(0, 3);
 
 const initialValues = {
   fullName: '',
@@ -84,12 +81,12 @@ export default function BuyProperty() {
 
   return (
     <>
-      <Hero
-        title="Find Your Next Property With Redbricks"
-        subtitle="Looking to buy? We source and match properties to your exact requirements — from family homes to investment opportunities."
-        ctaPrimary={{ label: 'Register as a Buyer', href: '#register-form' }}
-        ctaSecondary={{ label: 'Browse Available Properties', href: '/properties' }}
-        backgroundImage="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1920&q=80"
+<Hero
+        title="Buy Property With Redbricks"
+        subtitle="Access off-market and discounted properties before they hit the open market. Join our Early Bird list for first look."
+        ctaPrimary={{ label: 'Join Early Bird List', href: '/investors' }}
+        ctaSecondary={{ label: 'Browse Properties', href: '/properties' }}
+        backgroundImage="https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=1920&q=80"
       />
 
       <section className="section container" aria-labelledby="how-we-help-heading">
@@ -129,27 +126,6 @@ export default function BuyProperty() {
                 </div>
               ))}
             </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="section bg-background container" aria-labelledby="featured-heading">
-        <div className="max-w-4xl mx-auto">
-          <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between mb-12">
-            <div>
-              <h2 id="featured-heading" className="heading-section mb-2">Featured Properties for Sale</h2>
-              <p className="text-text-muted">A selection of properties currently available through our network.</p>
-            </div>
-            <Link to="/properties" className="mt-4 sm:mt-0">
-              <Button variant="outline" rightIcon={<ArrowRight className="w-4 h-4" aria-hidden="true" />}>
-                View All Properties
-              </Button>
-            </Link>
-          </div>
-          <div className="grid md:grid-cols-3 gap-6">
-            {featuredProperties.map((property) => (
-              <PropertyCard key={property.id} property={property} />
-            ))}
           </div>
         </div>
       </section>

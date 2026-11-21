@@ -21,10 +21,10 @@ export const properties = [
       'Close to Upper Street amenities'
     ],
     images: [
+      'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&q=80',
       'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80',
-      'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80',
       'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&q=80',
-      'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80'
+      'https://images.unsplash.com/photo-1600585152220-90363fe4e1f5?w=800&q=80'
     ],
     isFeatured: true,
     status: 'Available'
@@ -52,10 +52,10 @@ export const properties = [
       'Excellent rental yield potential'
     ],
     images: [
-      'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&q=80',
-      'https://images.unsplash.com/photo-1560448075-bb2c4e2e2b8a?w=800&q=80',
-      'https://images.unsplash.com/photo-1560185893-a55cbc8c57e8?w=800&q=80',
-      'https://images.unsplash.com/photo-1560448204-603b3fc33d0b?w=800&q=80'
+      'https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?w=800&q=80',
+      'https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=800&q=80',
+      'https://images.unsplash.com/photo-1600607687644-aac4c3eac7f4?w=800&q=80',
+      'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80'
     ],
     isFeatured: true,
     status: 'Available'
@@ -98,418 +98,453 @@ export const properties = [
     id: 4,
     slug: 'buy-to-let-investment-birmingham-b1',
     title: 'Buy-to-Let Investment Property',
-    location: 'Jewellery Quarter, Birmingham B1',
-    price: 210000,
+    location: 'Birmingham City Centre, B1',
+    price: 185000,
     bedrooms: 2,
     bathrooms: 1,
     type: 'Apartment',
     category: 'investment',
-    description: 'An excellent buy-to-let investment opportunity in Birmingham\'s historic Jewellery Quarter. This two-bedroom apartment is currently tenanted with a long-term tenant in place, generating an immediate rental income. The property is located in a popular development with strong rental demand from young professionals working in the city centre. The Jewellery Quarter offers a vibrant lifestyle with numerous bars, restaurants, and excellent transport links including the Metro tram network.',
+    description: 'An excellent buy-to-let investment opportunity in Birmingham\'s thriving city centre. This two-bedroom apartment offers strong rental yields in a high-demand area popular with young professionals. The property is located within a well-maintained development with secure entry and allocated parking. Close to New Street Station, the Bullring, and major employment hubs.',
     features: [
-      'Currently tenanted - immediate income',
-      'Strong rental demand area',
-      'Two double bedrooms',
-      'Modern bathroom',
-      'Open-plan living/kitchen',
-      'Communal gardens',
-      'Secure entry system',
-      'Close to Jewellery Quarter station',
-      'High yield potential',
-      'Professional tenant in situ'
+      'Strong rental yield (6.5%)',
+      'High tenant demand area',
+      'Secure development with allocated parking',
+      'Close to New Street Station',
+      'Walking distance to Bullring & Grand Central',
+      'Popular with young professionals',
+      'Well-managed building',
+      'No chain - immediate completion'
     ],
     images: [
-      'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&q=80',
-      'https://images.unsplash.com/photo-1560448075-bb2c4e2e2b8a?w=800&q=80',
-      'https://images.unsplash.com/photo-1560185893-a55cbc8c57e8?w=800&q=80'
+      'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80',
+      'https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=800&q=80',
+      'https://images.unsplash.com/photo-1600607687644-aac4c3eac7f4?w=800&q=80',
+      'https://images.unsplash.com/photo-1600585152220-90363fe4e1f5?w=800&q=80'
     ],
     isFeatured: true,
-    status: 'Tenanted',
-    yield: '6.2%'
+    status: 'Available',
+    yield: '6.5%',
+    discount: '10% BMV'
   },
   {
     id: 5,
     slug: 'hmo-investment-leeds-ls6',
-    title: 'HMO Investment Opportunity',
+    title: 'HMO Investment - 6 Bedrooms',
     location: 'Headingley, Leeds LS6',
-    price: 380000,
+    price: 425000,
     bedrooms: 6,
     bathrooms: 3,
     type: 'House',
     category: 'investment',
-    description: 'A fully licensed six-bedroom HMO (House in Multiple Occupation) in the heart of Headingley, one of Leeds\' most popular student and young professional areas. The property is currently fully let to professional tenants on individual AST agreements, generating strong rental income. Each bedroom is furnished to a high standard with en-suite or shared bathroom facilities. The property benefits from a large communal living area, modern kitchen, and rear yard.',
+    description: 'A fully licensed 6-bedroom HMO in the heart of Headingley, one of Leeds\' most popular student and professional areas. Currently let on individual tenancy agreements with strong rental income. The property has been recently refurbished to a high standard with modern kitchens, bathrooms, and fire safety systems throughout. Excellent transport links to both universities and city centre.',
     features: [
       'Fully licensed HMO (6 bedrooms)',
-      'Currently fully let',
-      'Individual AST agreements',
-      'Six furnished bedrooms',
-      'Three bathrooms (2 en-suite)',
-      'Large communal living area',
-      'Modern fitted kitchen',
-      'Rear yard',
-      'Excellent transport links',
-      'High rental yield',
+      'Current rental income: £3,200 pcm',
+      'Recent high-spec refurbishment',
+      'Modern kitchens and bathrooms',
+      'Full fire safety compliance',
+      'Individual tenancy agreements',
+      'Walking distance to Leeds & Beckett Universities',
+      'Excellent transport links to city centre',
       'Professional management available'
     ],
     images: [
+      'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&q=80',
       'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80',
-      'https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=800&q=80',
-      'https://images.unsplash.com/photo-1600607687644-aac4c3eac7f4?w=800&q=80'
+      'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&q=80',
+      'https://images.unsplash.com/photo-1600585152220-90363fe4e1f5?w=800&q=80'
     ],
     isFeatured: true,
     status: 'Tenanted',
-    yield: '8.5%'
+    yield: '9.2%'
   },
   {
     id: 6,
-    slug: 'renovation-project-brighton-bn1',
-    title: 'Renovation Project',
-    location: 'Brighton, BN1',
-    price: 450000,
+    slug: 'renovation-project-bristol-bs3',
+    title: 'Renovation Project - Victorian Terrace',
+    location: 'Bedminster, Bristol BS3',
+    price: 310000,
     bedrooms: 3,
     bathrooms: 1,
     type: 'House',
     category: 'investment',
-    description: 'A three-bedroom mid-terraced house in need of full renovation, located in a prime Brighton location just a short walk from the seafront and city centre. This property offers significant potential for value addition through refurbishment and extension (subject to planning). The area benefits from exceptional rental demand and strong capital growth. Ideal for an experienced developer or investor looking for a renovation project with excellent upside potential.',
+    description: 'A rare opportunity to acquire a Victorian terrace house in up-and-coming Bedminster requiring full renovation. The property offers significant scope for value addition through extension and refurbishment. Planning permission granted for a rear extension and loft conversion. In a rapidly gentrifying area with excellent rental demand and strong capital growth potential.',
     features: [
-      'Prime Brighton location',
-      'Walking distance to seafront',
-      'Three bedrooms',
-      'Large rear garden',
-      'Potential for extension (STPP)',
-      'Excellent rental demand',
-      'Strong capital growth area',
-      'Close to Brighton station',
-      'Vibrant local amenities',
-      'Blank canvas for renovation'
+      'Planning permission for extension & loft conversion',
+      'Significant value-add potential',
+      'Popular up-and-coming area',
+      'Victorian character features retained',
+      'Strong rental demand (£1,400 pcm post-renovation)',
+      'Projected GDV: £550,000+',
+      'Close to Temple Meads & city centre',
+      'No onward chain'
     ],
     images: [
-      'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80',
-      'https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=800&q=80'
-    ],
-    isFeatured: false,
-    status: 'Available'
-  },
-  {
-    id: 7,
-    slug: 'luxury-apartment-edinburgh-eh1',
-    title: 'Luxury New Build Apartment',
-    location: 'Edinburgh City Centre, EH1',
-    price: 580000,
-    bedrooms: 2,
-    bathrooms: 2,
-    type: 'Apartment',
-    category: 'buy',
-    description: 'A brand new, never-lived-in two-bedroom luxury apartment in a prestigious development on the Royal Mile. This property features premium finishes throughout including engineered oak flooring, bespoke fitted kitchen with integrated Miele appliances, and a spacious private terrace with views towards Arthur\'s Seat. The development offers a 24-hour concierge, secure entry, and underground parking. An exceptional opportunity to acquire a new build property in one of Edinburgh\'s most iconic locations.',
-    features: [
-      'Brand new - never lived in',
-      'Premium finishes throughout',
-      'Engineered oak flooring',
-      'Bespoke kitchen with Miele appliances',
-      'Private terrace with city views',
-      'Two en-suite bathrooms',
-      '24-hour concierge',
-      'Secure underground parking',
-      'Royal Mile location',
-      'Walking distance to Waverley station',
-      'NHBC 10-year warranty'
-    ],
-    images: [
-      'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&q=80',
-      'https://images.unsplash.com/photo-1560448075-bb2c4e2e2b8a?w=800&q=80',
-      'https://images.unsplash.com/photo-1560185893-a55cbc8c57e8?w=800&q=80',
-      'https://images.unsplash.com/photo-1560448204-603b3fc33d0b?w=800&q=80'
-    ],
-    isFeatured: true,
-    status: 'Available'
-  },
-  {
-    id: 8,
-    slug: 'discounted-property-liverpool-l1',
-    title: 'Discounted Investment Property',
-    location: 'Liverpool City Centre, L1',
-    price: 145000,
-    bedrooms: 2,
-    bathrooms: 1,
-    type: 'Apartment',
-    category: 'investment',
-    description: 'A two-bedroom apartment offered below market value in a well-maintained development in Liverpool city centre. This property represents an excellent opportunity for an investor looking for immediate equity and strong rental returns. The apartment requires some cosmetic updating but is structurally sound. The L1 postcode benefits from significant regeneration investment, excellent transport links, and high rental demand from the large student and professional population.',
-    features: [
-      'Below market value',
-      'Immediate equity potential',
-      'Two bedrooms',
-      'Spacious living area',
-      'Separate kitchen',
-      'Bathroom with shower over bath',
-      'Communal gardens',
-      'Secure entry system',
-      'L1 regeneration area',
-      'High rental demand',
-      'Close to Liverpool Central station'
-    ],
-    images: [
-      'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&q=80',
-      'https://images.unsplash.com/photo-1560448075-bb2c4e2e2b8a?w=800&q=80'
+      'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&q=80',
+      'https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=800&q=80',
+      'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&q=80',
+      'https://images.unsplash.com/photo-1600585152220-90363fe4e1f5?w=800&q=80'
     ],
     isFeatured: false,
     status: 'Available',
-    discount: '15% below market'
+    discount: '15% BMV'
   },
   {
-    id: 9,
-    slug: 'period-conversion-bristol-bs1',
-    title: 'Period Conversion Apartment',
-    location: 'Clifton, Bristol BS1',
-    price: 475000,
+    id: 7,
+    slug: 'commercial-retail-liverpool-l1',
+    title: 'Commercial Retail Unit',
+    location: 'Liverpool City Centre, L1',
+    price: 450000,
+    bedrooms: 0,
+    bathrooms: 2,
+    type: 'Commercial',
+    category: 'investment',
+    description: 'A prime retail unit on a busy high street in Liverpool city centre. Currently let to a national retailer on a long lease with 8 years remaining. Strong footfall location near Liverpool One and the main shopping district. Excellent investment with secure income and potential for rent reviews. Suitable for retail, office, or leisure use.',
+    features: [
+      'Prime high street location',
+      'Let to national retailer (8 years remaining)',
+      'Current rent: £35,000 p.a.',
+      'Strong footfall near Liverpool One',
+      'Long lease with upward-only rent reviews',
+      'Suitable for retail/office/leisure',
+      'Excellent transport links (Lime Street, Moorfields)',
+      'High visibility corner position'
+    ],
+    images: [
+      'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80',
+      'https://images.unsplash.com/photo-1600607687644-aac4c3eac7f4?w=800&q=80',
+      'https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=800&q=80',
+      'https://images.unsplash.com/photo-1600585152220-90363fe4e1f5?w=800&q=80'
+    ],
+    isFeatured: false,
+    status: 'Let',
+    yield: '7.8%'
+  },
+  {
+    id: 8,
+    slug: 'new-build-off-plan-manchester-m4',
+    title: 'New Build Off-Plan - Luxury Apartments',
+    location: 'Salford Quays, Manchester M4',
+    price: 275000,
     bedrooms: 2,
     bathrooms: 2,
     type: 'Apartment',
-    category: 'buy',
-    description: 'A stunning two-bedroom apartment within a beautifully converted Georgian building in the heart of Clifton. This property combines period elegance with modern luxury, featuring original sash windows, high ceilings, decorative cornicing, and a contemporary open-plan kitchen/living area. The master bedroom includes a walk-in wardrobe and luxurious en-suite. Clifton Village with its boutique shops, cafes, and restaurants is on the doorstep.',
+    category: 'investment',
+    description: 'Off-plan luxury apartments in a landmark waterside development at Salford Quays. Stunning views over the Manchester Ship Canal and MediaCityUK. High-specification finishes throughout including integrated appliances, underfloor heating, and smart home technology. Development includes residents\' gym, cinema room, concierge, and landscaped gardens. Completion Q2 2025.',
     features: [
-      'Georgian conversion',
-      'Original sash windows',
-      'High ceilings with cornicing',
-      'Open-plan kitchen/living',
-      'Master with walk-in wardrobe',
-      'Luxury en-suite bathroom',
-      'Second bedroom/double',
-      'Family bathroom',
-      'Clifton Village location',
-      'Communal gardens',
-      'Residents\' parking available'
+      'Off-plan - completion Q2 2025',
+      'Waterside location at Salford Quays',
+      'Views over MediaCityUK & Ship Canal',
+      'High-spec finishes & smart home tech',
+      'Underfloor heating throughout',
+      'Residents\' gym, cinema, concierge',
+      'Landscaped gardens & roof terrace',
+      '10-year NHBC warranty',
+      'Staged payments (20% on exchange)'
     ],
     images: [
-      'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&q=80',
-      'https://images.unsplash.com/photo-1560448075-bb2c4e2e2b8a?w=800&q=80',
-      'https://images.unsplash.com/photo-1560185893-a55cbc8c57e8?w=800&q=80'
+      'https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?w=800&q=80',
+      'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80',
+      'https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=800&q=80',
+      'https://images.unsplash.com/photo-1600607687644-aac4c3eac7f4?w=800&q=80'
+    ],
+    isFeatured: true,
+    status: 'Available',
+    yield: '5.5% (projected)'
+  },
+  {
+    id: 9,
+    slug: 'discounted-property-sheffield-s1',
+    title: 'Discounted Property - Quick Sale',
+    location: 'Sheffield City Centre, S1',
+    price: 145000,
+    bedrooms: 2,
+    bathrooms: 1,
+    type: 'House',
+    category: 'investment',
+    description: 'A two-bedroom mid-terrace house offered at a significant discount for quick sale. Property requires cosmetic updating but is structurally sound. Ideal for an investor looking for a refurbishment project or a first-time buyer willing to renovate. Popular rental area with strong demand from students and young professionals at nearby universities.',
+    features: [
+      'Significantly below market value',
+      'Structurally sound - cosmetic only',
+      'Refurbishment project opportunity',
+      'Strong rental demand (£850 pcm)',
+      'Close to both universities',
+      'Good transport links (train & tram)',
+      'No onward chain - quick completion',
+      'Projected GDV post-refurb: £200,000+'
+    ],
+    images: [
+      'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&q=80',
+      'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80',
+      'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&q=80',
+      'https://images.unsplash.com/photo-1600585152220-90363fe4e1f5?w=800&q=80'
+    ],
+    isFeatured: false,
+    status: 'Available',
+    discount: '22% BMV'
+  },
+  {
+    id: 10,
+    slug: 'georgian-townhouse-bath-ba1',
+    title: 'Georgian Townhouse',
+    location: 'Bath City Centre, BA1',
+    price: 950000,
+    bedrooms: 4,
+    bathrooms: 3,
+    type: 'House',
+    category: 'buy',
+    description: 'An elegant four-bedroom Georgian townhouse in a prestigious Bath location. This Grade II listed property retains stunning original features including cornicing, sash windows, and marble fireplaces. Arranged over four floors with a modern kitchen/breakfast room opening onto a walled garden. Walking distance to the Roman Baths, Thermae Bath Spa, and Bath Spa station.',
+    features: [
+      'Grade II listed Georgian townhouse',
+      'Original cornicing, sash windows, fireplaces',
+      'Four floors of accommodation',
+      'Modern kitchen/breakfast room',
+      'Private walled garden',
+      'Four bedrooms, three bathrooms',
+      'Walking distance to Roman Baths & Spa',
+      'Prime Bath city centre location'
+    ],
+    images: [
+      'https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?w=800&q=80',
+      'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80',
+      'https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=800&q=80',
+      'https://images.unsplash.com/photo-1600607687644-aac4c3eac7f4?w=800&q=80'
     ],
     isFeatured: true,
     status: 'Available'
   },
   {
-    id: 10,
-    slug: 'commercial-retail-unit-nottingham-ng1',
-    title: 'Commercial Retail Unit',
-    location: 'Nottingham City Centre, NG1',
-    price: 275000,
-    bedrooms: 0,
-    bathrooms: 1,
-    type: 'Commercial',
-    category: 'investment',
-    description: 'A prime retail unit on a busy high street in Nottingham city centre. Currently let to a national retailer on a long-term lease with upward-only rent reviews. The property comprises a ground floor retail area with basement storage. Excellent footfall, prominent position, and strong covenant tenant. Ideal for an investor seeking a hands-off commercial investment with secure income.',
-    features: [
-      'Prime high street location',
-      'Let to national retailer',
-      'Long-term lease',
-      'Upward-only rent reviews',
-      'Ground floor retail area',
-      'Basement storage',
-      'Excellent footfall',
-      'Prominent frontage',
-      'Strong tenant covenant',
-      'Hands-off investment',
-      'Close to Nottingham stations'
-    ],
-    images: [
-      'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=800&q=80',
-      'https://images.unsplash.com/photo-1560472355-355e0e0b8b8a?w=800&q=80'
-    ],
-    isFeatured: false,
-    status: 'Let',
-    yield: '5.8%'
-  },
-  {
     id: 11,
-    slug: 'semi-detached-family-home-reading-rg1',
-    title: 'Semi-Detached Family Home',
-    location: 'Reading, RG1',
-    price: 520000,
+    slug: 'edwardian-semi-edinburgh-eh10',
+    title: 'Edwardian Semi-Detached',
+    location: 'Morningside, Edinburgh EH10',
+    price: 580000,
     bedrooms: 4,
     bathrooms: 2,
     type: 'House',
     category: 'buy',
-    description: 'A well-presented four-bedroom semi-detached family home in a popular residential area of Reading. The property offers flexible accommodation with a through lounge/dining room, modern kitchen with access to the rear garden, and a downstairs cloakroom. Upstairs there are four bedrooms and a family bathroom. The property benefits from a driveway providing off-street parking, a garage, and a south-facing rear garden. Excellent for commuters with Reading station providing fast services to London Paddington.',
+    description: 'A charming four-bedroom Edwardian semi-detached house in desirable Morningside. This property retains wonderful period features including stained glass windows, original fireplaces, and cornicing. The accommodation includes a bay-fronted living room, dining room, modern kitchen, and a south-facing rear garden. Excellent local schools and transport links to the city centre.',
     features: [
-      'Four bedrooms',
-      'Through lounge/dining room',
-      'Modern kitchen',
-      'Downstairs cloakroom',
-      'Family bathroom',
-      'Driveway parking',
-      'Garage',
+      'Edwardian period features throughout',
+      'Stained glass windows & original fireplaces',
+      'Bay-fronted living room',
       'South-facing rear garden',
-      'Popular residential area',
-      'Fast trains to London',
-      'Good local schools',
-      'Close to town centre'
+      'Four bedrooms, two bathrooms',
+      'Excellent local schools',
+      'Great transport links to city centre',
+      'Popular Morningside location'
     ],
     images: [
+      'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&q=80',
       'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80',
-      'https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=800&q=80',
-      'https://images.unsplash.com/photo-1600607687644-aac4c3eac7f4?w=800&q=80'
+      'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&q=80',
+      'https://images.unsplash.com/photo-1600585152220-90363fe4e1f5?w=800&q=80'
     ],
     isFeatured: false,
     status: 'Available'
   },
   {
     id: 12,
-    slug: 'penthouse-apartment-glasgow-g1',
-    title: 'Penthouse Apartment',
-    location: 'Glasgow City Centre, G1',
-    price: 625000,
-    bedrooms: 3,
+    slug: 'warehouse-conversion-london-se1',
+    title: 'Warehouse Conversion Loft',
+    location: 'Bermondsey, London SE1',
+    price: 725000,
+    bedrooms: 2,
     bathrooms: 2,
     type: 'Apartment',
     category: 'buy',
-    description: 'A spectacular three-bedroom penthouse apartment occupying the top floor of a landmark building in Glasgow\'s financial district. This unique property offers panoramic city views from its wraparound terrace, a stunning open-plan living space with floor-to-ceiling glazing, and a bespoke kitchen with premium appliances. The master suite features a dressing room and luxurious en-suite. Two further double bedrooms share a family bathroom. Includes two secure underground parking spaces.',
+    description: 'A stunning warehouse conversion loft apartment in the heart of Bermondsey. This property features exposed brickwork, original timber beams, and industrial-style windows flooding the space with natural light. Open-plan living with a mezzanine bedroom area. High-end kitchen with premium appliances. Located in a vibrant area with galleries, restaurants, and excellent transport links.',
     features: [
-      'Top floor penthouse',
-      'Panoramic city views',
-      'Wraparound terrace',
-      'Floor-to-ceiling glazing',
-      'Bespoke premium kitchen',
-      'Master suite with dressing room',
-      'Luxury en-suite bathroom',
-      'Two further double bedrooms',
-      'Family bathroom',
-      'Two underground parking spaces',
-      '24-hour concierge',
-      'Financial district location'
+      'Authentic warehouse conversion',
+      'Exposed brickwork & timber beams',
+      'Industrial windows - exceptional light',
+      'Open-plan with mezzanine bedroom',
+      'High-end kitchen with premium appliances',
+      'Two luxury bathrooms',
+      'Prime Bermondsey location',
+      'Walking distance to London Bridge'
     ],
     images: [
-      'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&q=80',
-      'https://images.unsplash.com/photo-1560448075-bb2c4e2e2b8a?w=800&q=80',
-      'https://images.unsplash.com/photo-1560185893-a55cbc8c57e8?w=800&q=80',
-      'https://images.unsplash.com/photo-1560448204-603b3fc33d0b?w=800&q=80'
+      'https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=800&q=80',
+      'https://images.unsplash.com/photo-1600607687644-aac4c3eac7f4?w=800&q=80',
+      'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80',
+      'https://images.unsplash.com/photo-1600585152220-90363fe4e1f5?w=800&q=80'
     ],
     isFeatured: true,
     status: 'Available'
   },
   {
     id: 13,
-    slug: 'rental-investment-sheffield-s1',
-    title: 'Rental Investment Portfolio',
-    location: 'Sheffield City Centre, S1',
-    price: 340000,
+    slug: 'cotswold-stone-cottage-gloucester-gl7',
+    title: 'Cotswold Stone Cottage',
+    location: 'Cirencester, Gloucestershire GL7',
+    price: 650000,
     bedrooms: 3,
     bathrooms: 2,
     type: 'House',
-    category: 'investment',
-    description: 'A three-bedroom townhouse in a popular development near Sheffield city centre, currently achieving strong rental returns. The property is let to professional tenants on a long-term AST. The development is well-maintained with communal gardens and allocated parking. Sheffield\'s growing economy, two universities, and excellent transport links create sustained rental demand. An ideal hands-off investment for a portfolio landlord.',
+    category: 'buy',
+    description: 'A charming three-bedroom Cotswold stone cottage in a picturesque village near Cirencester. This Grade II listed property features exposed beams, inglenook fireplace, and flagstone floors. Beautifully renovated to combine period charm with modern comfort. Private walled garden with summerhouse. Walking distance to village pub and local amenities. Easy access to Cirencester and the Cotswolds.',
     features: [
-      'Currently tenanted',
-      'Professional tenants in situ',
-      'Long-term AST',
-      'Three bedrooms',
-      'Two bathrooms',
-      'Modern kitchen',
-      'Enclosed rear garden',
-      'Allocated parking',
-      'Communal gardens',
-      'Close to universities',
-      'Excellent transport links',
-      'Growing rental market'
+      'Grade II listed Cotswold stone cottage',
+      'Exposed beams & inglenook fireplace',
+      'Flagstone floors throughout',
+      'Private walled garden with summerhouse',
+      'Three bedrooms, two bathrooms',
+      'Picturesque village location',
+      'Walking distance to village pub',
+      'Easy access to Cotswolds AONB'
     ],
     images: [
+      'https://images.unsplash.com/photo-1582268611958-ebfd161ef9ce?w=800&q=80',
       'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80',
-      'https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=800&q=80'
+      'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&q=80',
+      'https://images.unsplash.com/photo-1600585152220-90363fe4e1f5?w=800&q=80'
     ],
     isFeatured: false,
-    status: 'Tenanted',
-    yield: '6.8%'
+    status: 'Available'
   },
   {
     id: 14,
-    slug: 'coastal-cottage-cornwall-tr18',
-    title: 'Coastal Cottage',
-    location: 'St Ives, Cornwall TR18',
-    price: 680000,
-    bedrooms: 2,
-    bathrooms: 1,
-    type: 'House',
-    category: 'buy',
-    description: 'A charming two-bedroom cottage in a picturesque location near St Ives, offering coastal walks and stunning sea views. This character property features exposed beams, a wood-burning stove, and a cottage garden. The accommodation comprises a cosy sitting room, kitchen/diner, two bedrooms, and a bathroom. Ideal as a second home, holiday let investment, or permanent coastal living. St Ives with its beaches, galleries, and restaurants is a short drive away.',
+    slug: 'development-site-brighton-bn1',
+    title: 'Development Site - Planning Granted',
+    location: 'Brighton, East Sussex BN1',
+    price: 850000,
+    bedrooms: 0,
+    bathrooms: 0,
+    type: 'Land',
+    category: 'investment',
+    description: 'A rare development opportunity in Brighton with full planning permission for 8 luxury apartments. The site currently has a vacant commercial building ready for demolition. Prime location close to the seafront, Brighton station, and the Lanes. Strong demand for high-quality residential in the area. Detailed planning consent for 8 x 2-bed apartments with parking and communal garden.',
     features: [
-      'Coastal location near St Ives',
-      'Sea views',
-      'Exposed beams',
-      'Wood-burning stove',
-      'Cottage garden',
-      'Two bedrooms',
-      'Character features throughout',
-      'Holiday let potential',
-      'Coastal walks on doorstep',
-      'Short drive to St Ives',
-      'Art galleries and beaches nearby'
+      'Full planning permission for 8 luxury apartments',
+      'Vacant commercial building - ready to develop',
+      'Prime Brighton location near seafront',
+      'Close to Brighton station & the Lanes',
+      'Strong residential demand',
+      'Detailed consent: 8 x 2-bed apartments',
+      'Parking & communal garden included',
+      'Projected GDV: £3.2M+'
     ],
     images: [
-      'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80',
+      'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80',
+      'https://images.unsplash.com/photo-1600607687644-aac4c3eac7f4?w=800&q=80',
       'https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=800&q=80',
-      'https://images.unsplash.com/photo-1600607687644-aac4c3eac7f4?w=800&q=80'
+      'https://images.unsplash.com/photo-1600585152220-90363fe4e1f5?w=800&q=80'
     ],
     isFeatured: false,
     status: 'Available'
   },
   {
     id: 15,
-    slug: 'student-accommodation-newcastle-ne1',
-    title: 'Student Accommodation Block',
-    location: 'Newcastle City Centre, NE1',
-    price: 850000,
+    slug: 'rental-portfolio-newcastle-ne1',
+    title: 'Rental Portfolio - 5 Properties',
+    location: 'Newcastle upon Tyne, NE1',
+    price: 625000,
     bedrooms: 12,
-    bathrooms: 12,
-    type: 'Commercial',
+    bathrooms: 5,
+    type: 'Portfolio',
     category: 'investment',
-    description: 'A purpose-built student accommodation block comprising 12 self-contained studio apartments, each with en-suite facilities and kitchenette. Fully let on a management agreement with a reputable student housing provider. Located within walking distance of both Newcastle University and Northumbria University. The property benefits from a communal laundry, bike storage, and on-site management. Strong investment with index-linked rent reviews.',
+    description: 'A portfolio of five tenanted properties in Newcastle city centre and popular suburbs. All properties are currently let on assured shorthold tenancies with reliable tenants. Mixed portfolio including 2 x 2-bed apartments, 2 x 3-bed terraced houses, and 1 x 4-bed HMO. Combined rental income £42,000 p.a. Hands-off investment with professional management in place.',
     features: [
-      '12 self-contained studios',
-      'Each with en-suite and kitchenette',
-      'Fully let on management agreement',
-      'Reputable operator in place',
-      'Walking distance to universities',
-      'Communal laundry facilities',
-      'Bike storage',
-      'On-site management',
-      'Index-linked rent reviews',
-      'Strong student demand',
-      'Hands-off investment',
-      'Prime city centre location'
+      '5 tenanted properties in one portfolio',
+      'Combined rental income: £42,000 p.a.',
+      '2 x 2-bed apartments (city centre)',
+      '2 x 3-bed terraced houses (Jesmond/Heaton)',
+      '1 x 4-bed HMO (fully licensed)',
+      'All on assured shorthold tenancies',
+      'Professional management in place',
+      'Strong yield: 6.7% net'
     ],
     images: [
-      'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=800&q=80',
-      'https://images.unsplash.com/photo-1560472355-355e0e0b8b8a?w=800&q=80'
+      'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&q=80',
+      'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80',
+      'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&q=80',
+      'https://images.unsplash.com/photo-1600585152220-90363fe4e1f5?w=800&q=80'
     ],
     isFeatured: false,
-    status: 'Let',
-    yield: '7.2%'
+    status: 'Tenanted',
+    yield: '6.7%'
   }
 ];
+
+export const propertyTypes = [
+  'House',
+  'Apartment',
+  'Commercial',
+  'Land',
+  'Portfolio'
+];
+
+export const propertyConditions = [
+  'Excellent',
+  'Good',
+  'Fair',
+  'Needs Renovation'
+];
+
+export const investmentStrategies = [
+  'Buy-to-Let',
+  'Buy-to-Flip',
+  'HMO Investment',
+  'Commercial Property',
+  'Discounted Properties',
+  'New Build & Off-Plan'
+];
+
+export const purchasePurposes = [
+  'Main Residence',
+  'Buy-to-Let Investment',
+  'Holiday Home',
+  'Commercial Use',
+  'Development'
+];
+
+export const getPropertiesByCategory = (category) => {
+  if (category === 'all') return properties;
+  return properties.filter(p => p.category === category);
+};
 
 export const getPropertyBySlug = (slug) => {
   return properties.find(p => p.slug === slug);
 };
 
-export const getPropertiesByCategory = (category) => {
-  return properties.filter(p => p.category === category);
+export const getRelatedProperties = (currentSlug, limit = 3) => {
+  const current = properties.find(p => p.slug === currentSlug);
+  if (!current) return [];
+  return properties
+    .filter(p => p.slug !== currentSlug && (p.category === current.category || p.type === current.type))
+    .slice(0, limit);
 };
 
 export const getFeaturedProperties = (limit = 6) => {
   return properties.filter(p => p.isFeatured).slice(0, limit);
 };
 
-export const getRelatedProperties = (currentSlug, category, limit = 3) => {
-  return properties
-    .filter(p => p.slug !== currentSlug && p.category === category)
-    .slice(0, limit);
+export const formatPrice = (price) => {
+  return new Intl.NumberFormat('en-GB', {
+    style: 'currency',
+    currency: 'GBP',
+    minimumFractionDigits: 0,
+    maximumFractionDigits: 0,
+  }).format(price);
 };
 
-export const filterProperties = ({ location, type, minPrice, maxPrice, bedrooms }) => {
-  return properties.filter(p => {
-    if (location && !p.location.toLowerCase().includes(location.toLowerCase())) return false;
-    if (type && p.type !== type) return false;
-    if (minPrice && p.price < minPrice) return false;
-    if (maxPrice && p.price > maxPrice) return false;
-    if (bedrooms && p.bedrooms < bedrooms) return false;
+export const filterProperties = ({ location, type, minPrice, maxPrice, bedrooms } = {}) => {
+  return properties.filter(property => {
+    if (location && !property.location.toLowerCase().includes(location.toLowerCase())) {
+      return false;
+    }
+    if (type && property.type !== type) {
+      return false;
+    }
+    if (minPrice !== undefined && property.price < minPrice) {
+      return false;
+    }
+    if (maxPrice !== undefined && property.price > maxPrice) {
+      return false;
+    }
+    if (bedrooms !== undefined && property.bedrooms < bedrooms) {
+      return false;
+    }
     return true;
   });
 };

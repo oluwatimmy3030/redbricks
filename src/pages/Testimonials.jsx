@@ -28,7 +28,7 @@ export default function Testimonials() {
       <Hero
         title="Client Testimonials"
         subtitle="Real feedback from property owners, buyers, investors, landlords, and property finders we've worked with."
-        backgroundImage="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1920&q=80"
+        backgroundImage="https://images.unsplash.com/photo-1600585152220-90363fe4e1f5?w=1920&q=80"
       />
 
       <section className="section container" aria-labelledby="testimonials-heading">

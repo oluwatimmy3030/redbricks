@@ -1,16 +1,16 @@
 export const siteConfig = {
   name: 'Redbricks',
-  tagline: 'Connecting Property Owners With The Right Opportunities',
-  description: 'At Redbricks, we bring property owners, buyers and investors together through smarter property sourcing and investment opportunities.',
+  tagline: 'Unlocking Property Opportunities',
+  description: 'Sell Faster, Buy Smarter with RedBricks. Property solutions and investment firm specialising in value-added opportunities.',
   
   contact: {
-    email: 'hello@redbricks.co.uk',
-    phone: '+44 (0) 20 7123 4567',
+    email: 'info@redbricks.co.uk',
+    phone: '0161 531 7013',
     address: {
-      line1: 'Redbricks Property',
-      line2: '123 Property Street',
-      city: 'London',
-      postcode: 'EC1A 1BB',
+      line1: 'Redbricks Group Ltd',
+      line2: 'Bartle House, 9 Oxford Court',
+      city: 'Manchester',
+      postcode: 'M2 3WQ',
       country: 'United Kingdom'
     }
   },

@@ -93,9 +93,9 @@ export default function SellProperty() {
     <>
       <Hero
         title="Sell Your Property With Redbricks"
-        subtitle="Connect with serious buyers and investors through our extensive network. We help property owners reach the right audience efficiently."
+        subtitle="Get a fair cash offer within 24 hours. No fees, no chains, complete in 14-28 days. Any condition, any location."
         ctaPrimary={{ label: 'Submit Your Property', href: '#submit-form' }}
-        backgroundImage="https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=1920&q=80"
+        backgroundImage="https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?w=1920&q=80"
       />
 
       <section className="section container" aria-labelledby="how-it-works-heading">

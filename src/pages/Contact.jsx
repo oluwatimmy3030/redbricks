@@ -61,8 +61,8 @@ export default function Contact() {
     <>
       <Hero
         title="Contact Redbricks"
-        subtitle="Have a question or want to discuss a property opportunity? We'd love to hear from you."
-        backgroundImage="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1920&q=80"
+        subtitle="Have a question or want to discuss a property opportunity? We'd love to hear from you. Call 0161 531 7013."
+        backgroundImage="https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?w=1920&q=80"
       />
 
       <section className="section container" aria-labelledby="contact-heading">
@@ -270,25 +270,26 @@ export default function Contact() {
         <div className="max-w-3xl mx-auto text-center">
           <h2 id="business-heading" className="heading-section mb-4">Business Enquiries</h2>
           <p className="text-lead mb-8">
-            For partnership proposals, media enquiries, or other business matters, please use our contact form
-            and select the appropriate subject, or email us directly.
+            For partnership proposals, media enquiries, or other business matters, please email us directly.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <a href="mailto:partnerships@redbricks.co.uk" className="text-secondary hover:underline">
-              partnerships@redbricks.co.uk
-            </a>
-            <span className="text-text-muted">|</span>
-            <a href="mailto:press@redbricks.co.uk" className="text-secondary hover:underline">
-              press@redbricks.co.uk
+            <a href="mailto:info@redbricks.co.uk" className="text-secondary hover:underline flex items-center gap-2">
+              <Mail className="w-4 h-4" aria-hidden="true" />
+              info@redbricks.co.uk
             </a>
           </div>
+          <p className="text-text-muted mt-2">Call us during business hours</p>
+          <a href="tel:01615317013" className="text-secondary hover:underline flex items-center justify-center gap-2 mt-1">
+            <Phone className="w-4 h-4" aria-hidden="true" />
+            0161 531 7013
+          </a>
         </div>
       </section>
 
       <CTASection
         title="Prefer to Talk?"
         subtitle="Call us during business hours for an immediate conversation about your property needs."
-        ctaPrimary={{ label: 'Call +44 (0) 20 7123 4567', href: 'tel:+442071234567' }}
+        ctaPrimary={{ label: 'Call 0161 531 7013', href: 'tel:01615317013' }}
         variant="primary"
       />
     </>

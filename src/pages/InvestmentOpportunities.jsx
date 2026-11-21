@@ -2,9 +2,7 @@ import { Link } from 'react-router-dom';
 import { ArrowRight, Building2, Home, Hammer, PiggyBank, TrendingUp, Target, Check, Shield, Users, Lightbulb } from 'lucide-react';
 import Hero from '../components/Hero';
 import CTASection from '../components/CTASection';
-import PropertyCard from '../components/PropertyCard';
 import Button from '../components/Button';
-import { getPropertiesByCategory, getFeaturedProperties } from '../data/properties';
 
 const investmentCategories = [
   {
@@ -51,8 +49,6 @@ const investmentCategories = [
   }
 ];
 
-const featuredInvestments = getPropertiesByCategory('investment').slice(0, 6);
-
 const benefits = [
   { icon: Shield, title: 'Curated Opportunities', description: 'We pre-screen properties and only present opportunities that meet our criteria.' },
   { icon: Users, title: 'Investor Network', description: 'Access to a network of fellow investors and industry professionals.' },
@@ -72,10 +68,10 @@ export default function InvestmentOpportunities() {
     <>
       <Hero
         title="Property Investment Opportunities"
-        subtitle="Discover curated investment opportunities across the UK. From buy-to-let and HMO to renovation projects and discounted properties."
+        subtitle="Below-market deals with 10-15% yields. Join 1000+ investors accessing off-market opportunities in North East & Midlands."
         ctaPrimary={{ label: 'Register as an Investor', href: '/investors' }}
-        ctaSecondary={{ label: 'View All Opportunities', href: '/properties' }}
-        backgroundImage="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1920&q=80"
+        ctaSecondary={{ label: 'View Current Deals', href: '/buy-property#register-form' }}
+        backgroundImage="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1920&q=80"
       />
 
       <section className="section container" aria-labelledby="categories-heading">
@@ -99,30 +95,7 @@ export default function InvestmentOpportunities() {
                   </li>
                 ))}
               </ul>
-              <Link to={`/investment-opportunities#${category.id}`} className="text-secondary font-medium hover:text-secondary-light transition-colors inline-flex items-center gap-1">
-                Learn more
-                <ArrowRight className="w-4 h-4" aria-hidden="true" />
-              </Link>
             </article>
-          ))}
-        </div>
-      </section>
-
-      <section className="section bg-background container" aria-labelledby="featured-investments-heading">
-        <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between mb-12">
-          <div>
-            <h2 id="featured-investments-heading" className="heading-section mb-2">Featured Investment Opportunities</h2>
-            <p className="text-text-muted">A selection of current investment properties in our network.</p>
-          </div>
-          <Link to="/properties" className="mt-4 sm:mt-0">
-            <Button variant="outline" rightIcon={<ArrowRight className="w-4 h-4" aria-hidden="true" />}>
-              View All Investments
-            </Button>
-          </Link>
-        </div>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {featuredInvestments.map((property) => (
-            <PropertyCard key={property.id} property={property} variant="featured" />
           ))}
         </div>
       </section>
@@ -171,7 +144,7 @@ export default function InvestmentOpportunities() {
         title="Ready to Explore Investment Opportunities?"
         subtitle="Join our investor network and get early access to curated property deals."
         ctaPrimary={{ label: 'Register as an Investor', href: '/investors' }}
-        ctaSecondary={{ label: 'Browse Current Opportunities', href: '/properties' }}
+        ctaSecondary={{ label: 'Register as a Buyer', href: '/buy-property#register-form' }}
         variant="primary"
       />
 

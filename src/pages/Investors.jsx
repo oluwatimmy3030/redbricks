@@ -92,11 +92,11 @@ export default function Investors() {
   return (
     <>
       <Hero
-        title="Investment Opportunities for Serious Investors"
-        subtitle="Join our network of registered investors and gain early access to curated property investment opportunities across the UK."
-        ctaPrimary={{ label: 'Register as an Investor', href: '#register-form' }}
-        ctaSecondary={{ label: 'View Current Opportunities', href: '/investment-opportunities' }}
-        backgroundImage="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1920&q=80"
+        title="Join Our Investor Network"
+        subtitle="Register free for early access to below-market investment properties. 1000+ investors trust us for 10-15% yields in North East & Midlands."
+        ctaPrimary={{ label: 'Register Free as Investor', href: '#register-form' }}
+        ctaSecondary={{ label: 'View Investment Opportunities', href: '/investment-opportunities' }}
+        backgroundImage="https://images.unsplash.com/photo-1600585152220-90363fe4e1f5?w=1920&q=80"
       />
 
       <section className="section container" aria-labelledby="why-choose-heading">
