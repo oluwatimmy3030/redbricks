@@ -49,7 +49,14 @@ const Navbar = () => {
 
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-surface/95 backdrop-blur-sm shadow-md' : 'bg-surface/95 backdrop-blur-sm shadow-md'}`}>
-      <nav className="container" aria-label="Main navigation">
+      {isMobileMenuOpen && (
+        <div
+          className="fixed inset-0 bg-black/50 z-40 lg:hidden"
+          onClick={() => setIsMobileMenuOpen(false)}
+          aria-hidden="true"
+        />
+      )}
+      <nav className="container relative z-50" aria-label="Main navigation">
         <div className="flex items-center justify-between h-16 lg:h-20">
           <Link to="/" className="flex items-center gap-2" aria-label="Redbricks Home">
             <div className="w-10 h-10 rounded-lg bg-secondary flex items-center justify-center">
@@ -184,14 +191,6 @@ const Navbar = () => {
           </div>
         )}
       </nav>
-
-      {isMobileMenuOpen && (
-        <div
-          className="fixed inset-0 bg-black/50 z-40 lg:hidden"
-          onClick={() => setIsMobileMenuOpen(false)}
-          aria-hidden="true"
-        />
-      )}
     </header>
   );
 };
