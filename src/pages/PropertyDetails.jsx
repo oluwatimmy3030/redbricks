@@ -161,7 +161,7 @@ export default function PropertyDetails() {
                     <Phone className="w-5 h-5" aria-hidden="true" />
                     <span>Call: +44 (0) 20 7123 4567</span>
                   </a>
-                  <a href={`mailto:hello@redbricks.co.uk?subject=Enquiry: ${encodeURIComponent(property.title)}`} className="flex items-center gap-3 text-surface/80 hover:text-surface transition-colors">
+                  <a href={`mailto:info@redbricks.co.uk?subject=Enquiry: ${encodeURIComponent(property.title)}`} className="flex items-center gap-3 text-surface/80 hover:text-surface transition-colors">
                     <Mail className="w-5 h-5" aria-hidden="true" />
                     <span>Email Us</span>
                   </a>

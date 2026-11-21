@@ -41,40 +41,22 @@ export default function About() {
       <section className="section container" aria-labelledby="intro-heading">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
-            <h2 id="intro-heading" className="heading-section mb-4">Who We Are</h2>
+            <h2 id="intro-heading" className="heading-section mb-4">About Redbricks</h2>
           </div>
           <div className="prose text-text-muted max-w-none space-y-6">
             <p>
-              Redbricks was established to bridge the gap between property owners looking to sell or let their properties,
-              and buyers and investors seeking quality opportunities. We operate as an intermediary — not a traditional
-              estate agent — focusing on creating the right connections between the right parties.
+              Redbricks operates as a property sourcing and investment intermediary, connecting property owners with
+              interested buyers and investors. We facilitate connections between the right people to create successful
+              property transactions.
+            </p>
+            <h3 className="text-lg font-semibold text-primary mb-2">Our Role</h3>
+            <p>
+              We help property owners reach qualified buyers and investors through our established network and marketing
+              channels.
             </p>
             <p>
-              Our approach is simple: we listen to understand your goals, we curate opportunities that genuinely match
-              your criteria, and we facilitate introductions with transparency and professionalism throughout the process.
-            </p>
-            <p>
-              We don't buy or sell properties ourselves. We don't represent both sides of a transaction. We work for you,
-              whether you're a property owner, a buyer, an investor, a landlord, or a property finder.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section className="section bg-background container" aria-labelledby="story-heading">
-        <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 id="story-heading" className="heading-section mb-4">Our Story</h2>
-            <p className="text-lead">[Company history and background to be added]</p>
-          </div>
-          <div className="prose text-text-muted max-w-none space-y-6">
-            <p>
-              <strong>Note:</strong> This section is a placeholder for your company's specific history, founding story,
-              and key milestones. Replace this content with your actual company background.
-            </p>
-            <p>
-              Consider including: founding year and circumstances, key milestones and achievements, growth trajectory,
-              team expansion, notable transactions or partnerships, and your evolution as a business.
+              For buyers and investors, we source and present opportunities that match specific criteria, saving time and
+              effort in property search.
             </p>
           </div>
         </div>

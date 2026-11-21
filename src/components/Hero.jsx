@@ -8,6 +8,7 @@ const Hero = ({
   subtitle,
   ctaPrimary,
   ctaSecondary,
+  ctaTertiary,
   backgroundImage,
   className = '',
   children,
@@ -40,7 +41,7 @@ const Hero = ({
             children
           ) : (
             <>
-              <h1 id="hero-title" className="heading-display text-surface mb-6 animate-fade-in">
+              <h1 id="hero-title" className="text-4xl lg:text-5xl font-bold tracking-tight text-surface mb-6 animate-fade-in">
                 {title}
               </h1>
               {subtitle && (
@@ -58,18 +59,27 @@ const Hero = ({
                   </a>
                 </p>
               )}
-              <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-slide-up">
-                {ctaPrimary && (
-                  <Link to={ctaPrimary.href} className="w-full sm:w-auto">
+              <div className="flex flex-col items-center gap-4 sm:gap-6 animate-slide-up">
+                <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-6 w-full">
+                  {ctaPrimary && (
+                    <Link to={ctaPrimary.href} className="w-full sm:w-auto">
+                      <Button variant="primary" size="lg" rightIcon={<ArrowRight className="w-5 h-5" aria-hidden="true" />} fullWidth>
+                        {ctaPrimary.label}
+                      </Button>
+                    </Link>
+                  )}
+                  {ctaSecondary && (
+                    <Link to={ctaSecondary.href} className="w-full sm:w-auto">
+                      <Button variant="ghost" size="lg" fullWidth className="text-surface border-2 border-surface/50 hover:bg-surface/10 hover:border-surface">
+                        {ctaSecondary.label}
+                      </Button>
+                    </Link>
+                  )}
+                </div>
+                {ctaTertiary && (
+                  <Link to={ctaTertiary.href} className="w-full sm:w-auto">
                     <Button variant="secondary" size="lg" rightIcon={<ArrowRight className="w-5 h-5" aria-hidden="true" />} fullWidth>
-                      {ctaPrimary.label}
-                    </Button>
-                  </Link>
-                )}
-                {ctaSecondary && (
-                  <Link to={ctaSecondary.href} className="w-full sm:w-auto">
-                    <Button variant="ghost" size="lg" fullWidth className="text-surface border-2 border-surface/50 hover:bg-surface/10 hover:border-surface">
-                      {ctaSecondary.label}
+                      {ctaTertiary.label}
                     </Button>
                   </Link>
                 )}

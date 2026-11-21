@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { ArrowRight, Check, Users, Shield, Lightbulb, Target, Home as HomeIcon, Building2, PiggyBank, Key, Search } from 'lucide-react';
+import { ArrowRight, Check, Users, Shield, Lightbulb, Target, Home as HomeIcon, Building2, PiggyBank, Key, Clock } from 'lucide-react';
 import Hero from '../components/Hero';
 import ServiceCard from '../components/ServiceCard';
 import CTASection from '../components/CTASection';
@@ -31,13 +31,6 @@ const services = [
     description: 'Join 1000+ investors. Below-market deals with 10-15% yields in North East & Midlands.',
     href: '/investment-opportunities',
     cta: 'See Opportunities'
-  },
-  {
-    icon: Search,
-    title: 'Property Finders',
-    description: 'Earn £500-£1,500 per referral. Free training, no experience needed. Work flexible hours.',
-    href: '/property-finders',
-    cta: 'Join Free'
   }
 ];
 
@@ -106,25 +99,17 @@ export default function Home() {
         title="Unlocking Property Opportunities - Sell Faster, Buy Smarter with RedBricks"
         subtitle="We connect property sellers with buyers through smart sourcing and open doors to exceptional residential and investment opportunities across the UK."
         backgroundImage="https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?w=1920&q=80"
-        showPhone={true}
-        phoneNumber="0161 531 7013"
         ctaPrimary={{ label: 'Sell Your Property', href: '/sell-property' }}
         ctaSecondary={{ label: 'Buy A Property', href: '/buy-property' }}
+        ctaTertiary={{ label: 'Explore Investment Opportunities', href: '/investment-opportunities' }}
       />
-      <div className="flex justify-center animate-slide-up mb-12">
-        <Link to="/investment-opportunities" className="w-full sm:w-auto">
-          <Button variant="secondary" size="lg" rightIcon={<ArrowRight className="w-5 h-5" aria-hidden="true" />} fullWidth className="min-w-[280px]">
-            Explore Investment Opportunities
-          </Button>
-        </Link>
-      </div>
 
       <section id="contact-form" className="section bg-primary/5 container" aria-labelledby="contact-heading">
         <div className="max-w-3xl mx-auto">
           <div className="bg-surface rounded-2xl p-6 md:p-8 shadow-lg border border-border">
             <div className="text-center mb-6">
-              <h2 id="contact-heading" className="heading-section mb-2">Get in Touch</h2>
-              <p className="text-text-muted">Have a question? We'd love to hear from you.</p>
+              <h2 id="contact-heading" className="heading-section mb-2">Selling or Buying?</h2>
+              <p className="text-text-muted">Get in touch through the form below. We're here to help</p>
             </div>
             <form onSubmit={handleSubmit(onSubmit)} className="space-y-4" noValidate>
               <div className="grid md:grid-cols-2 gap-4">

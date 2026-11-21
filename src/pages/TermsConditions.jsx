@@ -169,7 +169,7 @@ export default function TermsConditions() {
                 <p>123 Property Street</p>
                 <p>London EC1A 1BB</p>
                 <p>United Kingdom</p>
-                <p>Email: <a href="mailto:legal@redbricks.co.uk" className="underline hover:text-primary">legal@redbricks.co.uk</a></p>
+                <p>Email: <a href="mailto:info@redbricks.co.uk" className="underline hover:text-primary">info@redbricks.co.uk</a></p>
               </address>
             </section>
           </article>

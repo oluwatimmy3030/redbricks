@@ -56,8 +56,7 @@ export const siteConfig = {
         label: 'Services', 
         href: '/landlords',
         dropdown: [
-          { label: 'Landlord Solutions', href: '/landlords' },
-          { label: 'Property Finders', href: '/property-finders' }
+          { label: 'Landlord Solutions', href: '/landlords' }
         ]
       },
       { label: 'About Us', href: '/about' },
@@ -79,8 +78,7 @@ export const siteConfig = {
       { label: 'Buy A Property', href: '/buy-property' },
       { label: 'Investment Opportunities', href: '/investment-opportunities' },
       { label: 'For Investors', href: '/investors' },
-      { label: 'Landlord Solutions', href: '/landlords' },
-      { label: 'Property Finders', href: '/property-finders' }
+      { label: 'Landlord Solutions', href: '/landlords' }
     ],
     legal: [
       { label: 'Privacy Policy', href: '/privacy-policy' },

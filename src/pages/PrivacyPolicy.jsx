@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import { ArrowRight, Shield, AlertTriangle } from 'lucide-react';
 import Hero from '../components/Hero';
 import Button from '../components/Button';
 
@@ -16,21 +15,6 @@ export default function PrivacyPolicy() {
 
       <section className="section container" aria-labelledby="policy-heading">
         <div className="max-w-4xl mx-auto">
-          <div className="bg-amber-50 border border-amber-200 rounded-xl p-6 mb-12" role="alert">
-            <div className="flex items-start gap-4">
-              <div className="w-10 h-10 rounded-full bg-amber-100 flex items-center justify-center flex-shrink-0 mt-0.5">
-                <AlertTriangle className="w-5 h-5 text-amber-600" aria-hidden="true" />
-              </div>
-              <div>
-                <h3 className="text-lg font-semibold text-amber-900 mb-2">Legal Review Required</h3>
-                <p className="text-amber-800">
-                  <strong>This document is a template placeholder and must be reviewed by a qualified legal professional before publication.</strong>
-                  It does not constitute legal advice. GDPR, PECR, and UK data protection laws require specific disclosures
-                  based on your actual data processing activities. Ensure all sections accurately reflect your practices.
-                </p>
-              </div>
-            </div>
-          </div>
 
           <article className="prose text-text-muted max-w-none space-y-10">
             <section>
@@ -132,7 +116,7 @@ export default function PrivacyPolicy() {
                 <li><strong>Right to Object:</strong> Object to processing based on legitimate interests or direct marketing</li>
                 <li><strong>Rights related to Automated Decision Making:</strong> Not currently applicable</li>
               </ul>
-              <p>To exercise these rights, contact us at <a href="mailto:privacy@redbricks.co.uk" className="underline hover:text-primary">privacy@redbricks.co.uk</a>. We respond within one month.</p>
+              <p>To exercise these rights, contact us at <a href="mailto:info@redbricks.co.uk" className="underline hover:text-primary">info@redbricks.co.uk</a>. We respond within one month.</p>
             </section>
 
             <section>
@@ -174,7 +158,7 @@ export default function PrivacyPolicy() {
                 <p>123 Property Street</p>
                 <p>London EC1A 1BB</p>
                 <p>United Kingdom</p>
-                <p>Email: <a href="mailto:privacy@redbricks.co.uk" className="underline hover:text-primary">privacy@redbricks.co.uk</a></p>
+                <p>Email: <a href="mailto:info@redbricks.co.uk" className="underline hover:text-primary">info@redbricks.co.uk</a></p>
               </address>
               <p>You also have the right to lodge a complaint with the Information Commissioner's Office (ICO) at <a href="https://ico.org.uk" target="_blank" rel="noopener noreferrer" className="underline hover:text-primary">ico.org.uk</a>.</p>
             </section>

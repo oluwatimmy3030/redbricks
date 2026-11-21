@@ -10,7 +10,6 @@ import PropertyDetails from './pages/PropertyDetails';
 import InvestmentOpportunities from './pages/InvestmentOpportunities';
 import Investors from './pages/Investors';
 import Landlords from './pages/Landlords';
-import PropertyFinders from './pages/PropertyFinders';
 import About from './pages/About';
 import Testimonials from './pages/Testimonials';
 import Contact from './pages/Contact';
@@ -42,7 +41,6 @@ function App() {
             <Route path="/investment-opportunities" element={<InvestmentOpportunities />} />
             <Route path="/investors" element={<Investors />} />
             <Route path="/landlords" element={<Landlords />} />
-            <Route path="/property-finders" element={<PropertyFinders />} />
             <Route path="/about" element={<About />} />
             <Route path="/testimonials" element={<Testimonials />} />
             <Route path="/contact" element={<Contact />} />

@@ -68,7 +68,7 @@ export default function InvestmentOpportunities() {
     <>
       <Hero
         title="Property Investment Opportunities"
-        subtitle="Below-market deals with 10-15% yields. Join 1000+ investors accessing off-market opportunities in North East & Midlands."
+        subtitle="Below-market deals with projected 8-15% yields. Join 1000+ investors accessing off-market opportunities in North West, North East and other promising areas in the UK."
         ctaPrimary={{ label: 'Register as an Investor', href: '/investors' }}
         ctaSecondary={{ label: 'View Current Deals', href: '/buy-property#register-form' }}
         backgroundImage="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1920&q=80"
