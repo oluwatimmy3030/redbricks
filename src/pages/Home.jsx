@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { ArrowRight, Check, Users, Shield, Lightbulb, Target, Home as HomeIcon, Building2, PiggyBank, Key, Search, Phone, Mail, MapPin, Award, TrendingUp, Clock } from 'lucide-react';
+import { ArrowRight, Check, Users, Shield, Lightbulb, Target, Home as HomeIcon, Building2, PiggyBank, Key, Search } from 'lucide-react';
 import Hero from '../components/Hero';
 import ServiceCard from '../components/ServiceCard';
 import CTASection from '../components/CTASection';
@@ -59,13 +59,6 @@ const steps = [
   }
 ];
 
-const stats = [
-  { value: '30+', label: 'Years Experience', icon: Award },
-  { value: '£20m+', label: 'Property Completions', icon: TrendingUp },
-  { value: '1000+', label: 'Active Investors', icon: Users },
-  { value: '14-28', label: 'Days to Complete', icon: Clock }
-];
-
 const contactFormInitial = {
   firstName: '',
   lastName: '',
@@ -110,38 +103,21 @@ export default function Home() {
   return (
     <>
       <Hero
-        title="Unlocking Property Opportunities"
-        subtitle="Sell Faster, Buy Smarter with RedBricks"
+        title="Unlocking Property Opportunities - Sell Faster, Buy Smarter with RedBricks"
+        subtitle="We connect property sellers with buyers through smart sourcing and open doors to exceptional residential and investment opportunities across the UK."
         backgroundImage="https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?w=1920&q=80"
         showPhone={true}
         phoneNumber="0161 531 7013"
-      >
-        <h1 id="hero-title" className="heading-display text-surface mb-6 animate-fade-in">
-          Unlocking Property Opportunities
-        </h1>
-        <p className="text-lead text-surface/90 mb-10 animate-slide-up">
-          Sell Faster, Buy Smarter with RedBricks
-        </p>
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-slide-up mb-8">
-          <Link to="/sell-property" className="w-full sm:w-auto">
-            <Button variant="secondary" size="lg" rightIcon={<ArrowRight className="w-5 h-5" aria-hidden="true" />} fullWidth>
-              Sell Your Property
-            </Button>
-          </Link>
-          <Link to="/buy-property" className="w-full sm:w-auto">
-            <Button variant="secondary" size="lg" rightIcon={<ArrowRight className="w-5 h-5" aria-hidden="true" />} fullWidth>
-              Find Your Next Property
-            </Button>
-          </Link>
-        </div>
-        <div className="flex justify-center animate-slide-up">
-          <Link to="/investment-opportunities" className="w-full sm:w-auto">
-            <Button variant="ghost" size="lg" fullWidth className="text-surface border-2 border-surface/50 hover:bg-surface/10 hover:border-surface min-w-[280px]">
-              Explore Investment Opportunities
-            </Button>
-          </Link>
-        </div>
-      </Hero>
+        ctaPrimary={{ label: 'Sell Your Property', href: '/sell-property' }}
+        ctaSecondary={{ label: 'Buy A Property', href: '/buy-property' }}
+      />
+      <div className="flex justify-center animate-slide-up mb-12">
+        <Link to="/investment-opportunities" className="w-full sm:w-auto">
+          <Button variant="secondary" size="lg" rightIcon={<ArrowRight className="w-5 h-5" aria-hidden="true" />} fullWidth className="min-w-[280px]">
+            Explore Investment Opportunities
+          </Button>
+        </Link>
+      </div>
 
       <section id="contact-form" className="section bg-primary/5 container" aria-labelledby="contact-heading">
         <div className="max-w-3xl mx-auto">
@@ -219,20 +195,6 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section container" aria-labelledby="stats-heading">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-5xl mx-auto text-center">
-          {stats.map((stat, index) => (
-            <div key={index} className="p-4">
-              <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-3 text-primary">
-                <stat.icon className="w-7 h-7" aria-hidden="true" />
-              </div>
-              <div className="text-3xl md:text-4xl font-bold text-primary">{stat.value}</div>
-              <div className="text-text-muted text-sm">{stat.label}</div>
-            </div>
-          ))}
-        </div>
-      </section>
-
       <section className="section bg-background container" aria-labelledby="how-it-works-heading">
         <div className="text-center mb-16">
           <h2 id="how-it-works-heading" className="heading-section mb-4">How RedBricks Works</h2>
@@ -265,6 +227,14 @@ export default function Home() {
           ))}
         </div>
       </section>
+
+      <CTASection
+        title="Are You an Investor Looking for Discounted Deals?"
+        subtitle="Join our Early Bird list for first access to below-market investment properties with 10-15% yields."
+        ctaPrimary={{ label: 'Register Free as Investor', href: '/investors' }}
+        ctaSecondary={{ label: 'View Current Deals', href: '/investment-opportunities' }}
+        variant="primary"
+      />
 
       <section className="section bg-background container" aria-labelledby="why-choose-heading">
         <div className="text-center mb-16">
@@ -302,14 +272,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      <CTASection
-        title="Are You an Investor Looking for Discounted Deals?"
-        subtitle="Join our Early Bird list for first access to below-market investment properties with 10-15% yields."
-        ctaPrimary={{ label: 'Register Free as Investor', href: '/investors' }}
-        ctaSecondary={{ label: 'View Current Deals', href: '/investment-opportunities' }}
-        variant="primary"
-      />
 
       <section className="section container" aria-labelledby="faq-heading">
         <div className="max-w-3xl mx-auto">
