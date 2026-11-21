@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, ChevronDown, Home } from 'lucide-react';
 import { siteConfig } from '../config/siteConfig';
@@ -9,6 +9,7 @@ const Navbar = () => {
   const [openDropdown, setOpenDropdown] = useState(null);
   const [isScrolled, setIsScrolled] = useState(false);
   const location = useLocation();
+  const dropdownTimeoutRef = useRef(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -31,13 +32,23 @@ const Navbar = () => {
     setOpenDropdown(openDropdown === label ? null : label);
   };
 
+  const startCloseDropdown = () => {
+    dropdownTimeoutRef.current = setTimeout(() => setOpenDropdown(null), 300);
+  };
+
+  const cancelCloseDropdown = () => {
+    if (dropdownTimeoutRef.current) {
+      clearTimeout(dropdownTimeoutRef.current);
+    }
+  };
+
   const isActive = (href) => {
     if (href === '/') return location.pathname === '/';
     return location.pathname.startsWith(href);
   };
 
   return (
-    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-surface/95 backdrop-blur-sm shadow-md' : 'bg-transparent'}`}>
+    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-surface/95 backdrop-blur-sm shadow-md' : 'bg-surface/95 backdrop-blur-sm shadow-md'}`}>
       <nav className="container" aria-label="Main navigation">
         <div className="flex items-center justify-between h-16 lg:h-20">
           <Link to="/" className="flex items-center gap-2" aria-label="Redbricks Home">
@@ -49,18 +60,13 @@ const Navbar = () => {
 
           <div className="hidden lg:flex items-center gap-1">
             {siteConfig.navigation.main.map((item, index) => (
-              <div key={index} className="relative">
+              <div key={index} className="relative" onMouseEnter={cancelCloseDropdown} onMouseLeave={startCloseDropdown}>
                 {item.dropdown ? (
                   <div className="relative">
                     <button
                       onClick={() => toggleDropdown(item.label)}
-                      onBlur={(e) => {
-                        setTimeout(() => {
-                          if (!e.currentTarget.contains(e.relatedTarget)) {
-                            setOpenDropdown(null);
-                          }
-                        }, 100);
-                      }}
+                      onMouseEnter={cancelCloseDropdown}
+                      onMouseLeave={startCloseDropdown}
                       className={`flex items-center gap-1.5 px-4 py-2.5 rounded-lg text-sm font-medium transition-colors ${
                         isActive(item.href) ? 'text-secondary' : 'text-text hover:text-primary'
                       }`}
@@ -74,6 +80,8 @@ const Navbar = () => {
                       <div
                         className="absolute top-full left-0 mt-2 w-56 bg-surface rounded-xl shadow-xl border border-border py-2 animate-slide-down"
                         role="menu"
+                        onMouseEnter={cancelCloseDropdown}
+                        onMouseLeave={startCloseDropdown}
                       >
                         {item.dropdown.map((subItem, subIndex) => (
                           <Link
@@ -119,7 +127,7 @@ const Navbar = () => {
         </div>
 
         {isMobileMenuOpen && (
-          <div className="lg:hidden py-4 border-t border-border animate-slide-down">
+          <div className="lg:hidden py-4 border-t border-border animate-slide-down bg-surface">
             <div className="flex flex-col gap-2">
               {siteConfig.navigation.main.map((item, index) => (
                 <div key={index}>
@@ -142,7 +150,7 @@ const Navbar = () => {
                               key={subIndex}
                               to={subItem.href}
                               className={`block px-3 py-2 text-sm rounded-md transition-colors ${
-                                isActive(subItem.href) ? 'text-secondary bg-primary/5' : 'text-text-muted hover:text-primary'
+                                isActive(subItem.href) ? 'text-secondary bg-primary/5' : 'text-text hover:text-primary'
                               }`}
                               onClick={() => setIsMobileMenuOpen(false)}
                             >
