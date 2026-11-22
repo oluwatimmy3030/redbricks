@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { ArrowRight, Check, Users, Shield, Lightbulb, Target, Home as HomeIcon, Building2, PiggyBank, Key, Clock } from 'lucide-react';
+import { ArrowRight, Check, Users, Lightbulb, Target, Home as HomeIcon, Building2, PiggyBank, Key, Clock } from 'lucide-react';
 import Hero from '../components/Hero';
 import ServiceCard from '../components/ServiceCard';
 import CTASection from '../components/CTASection';
@@ -226,14 +226,7 @@ export default function Home() {
           <h2 id="why-choose-heading" className="heading-section mb-4">Why Choose RedBricks?</h2>
           <p className="text-lead">We're not estate agents. We're property people who deliver results.</p>
         </div>
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
-          <div className="text-center p-6">
-            <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-4 text-primary">
-              <Shield className="w-7 h-7" aria-hidden="true" />
-            </div>
-            <h3 className="text-lg font-semibold text-primary mb-2">No Fees Ever</h3>
-            <p className="text-text-muted">We cover all legal fees. No estate agent commissions. No hidden costs.</p>
-          </div>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
           <div className="text-center p-6">
             <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-4 text-primary">
               <Clock className="w-7 h-7" aria-hidden="true" />
