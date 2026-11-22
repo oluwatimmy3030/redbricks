@@ -139,6 +139,16 @@ const Navbar = () => {
 
         {isMobileMenuOpen && (
           <div className="lg:hidden py-4 border-t border-border animate-slide-down bg-surface">
+            <div className="flex items-center justify-between px-4 py-3">
+              <h3 className="text-lg font-semibold text-primary">Menu</h3>
+              <button
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="text-text hover:text-secondary transition-colors"
+                aria-label="Close menu"
+              >
+                <X className="w-6 h-6" aria-hidden="true" />
+              </button>
+            </div>
             <div className="flex flex-col gap-2">
               {siteConfig.navigation.main.map((item, index) => (
                 <div key={index}>
