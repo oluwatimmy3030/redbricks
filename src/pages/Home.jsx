@@ -38,7 +38,7 @@ const steps = [
   {
     number: '01',
     title: 'Talk To Us',
-    description: 'Call or fill our quick form. We\'ll have a confidential chat about your property with no obligation.'
+    description: 'Tell us about your property goals. Whether you\'re selling, buying, or investing, we listen first.'
   },
   {
     number: '02',
@@ -231,8 +231,8 @@ export default function Home() {
             <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-4 text-primary">
               <Clock className="w-7 h-7" aria-hidden="true" />
             </div>
-            <h3 className="text-lg font-semibold text-primary mb-2">Talk to Us</h3>
-            <p className="text-text-muted">Tell us about your property goals. Whether you're selling, buying, or investing, we listen first.</p>
+            <h3 className="text-lg font-semibold text-primary mb-2">Fast Completion</h3>
+            <p className="text-text-muted">Typically 14-28 days. We work to your timeline, not ours.</p>
           </div>
           <div className="text-center p-6">
             <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-4 text-primary">
