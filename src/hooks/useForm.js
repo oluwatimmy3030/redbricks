@@ -90,17 +90,25 @@ export const useForm = (initialValues = {}, validationRules = {}) => {
         try {
           await onSubmit(values);
           setSubmitStatus('success');
+          // Clear form after a short delay so the success message shows
+          setTimeout(() => {
+            setValues(initialValues);
+            setErrors({});
+            setTouched({});
+            setSubmitStatus(null);
+            setIsSubmitting(false);
+          }, 3000);
         } catch (error) {
           setSubmitStatus('error');
+          setIsSubmitting(false);
           throw error;
         }
       } else {
         setSubmitStatus('error');
+        setIsSubmitting(false);
       }
-
-      setIsSubmitting(false);
     };
-  }, [validationRules, values, validateAll]);
+  }, [validationRules, values, validateAll, initialValues]);
 
   const resetForm = useCallback(() => {
     setValues(initialValues);

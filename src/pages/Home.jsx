@@ -95,7 +95,7 @@ export default function Home() {
     };
 
     try {
-      await sendViaMailto(payload);
+      sendViaMailto(payload);
       return true;
     } catch (error) {
       throw error;
