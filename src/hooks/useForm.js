@@ -90,14 +90,17 @@ export const useForm = (initialValues = {}, validationRules = {}) => {
         try {
           await onSubmit(values);
           setSubmitStatus('success');
-          // Clear form after a short delay so the success message shows
+          // Show success message for 5 seconds, then clear form
           setTimeout(() => {
             setValues(initialValues);
             setErrors({});
             setTouched({});
+          }, 5000);
+          // Clear status 2 seconds after form is cleared
+          setTimeout(() => {
             setSubmitStatus(null);
             setIsSubmitting(false);
-          }, 3000);
+          }, 7000);
         } catch (error) {
           setSubmitStatus('error');
           setIsSubmitting(false);
