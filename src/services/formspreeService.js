@@ -1,0 +1,31 @@
+const FORMSPREE_ENDPOINT = 'https://formsubmit.co/yemipedro@yahoo.com';
+
+export async function sendToFormspree(data) {
+  const formData = new FormData();
+  Object.keys(data).forEach(key => {
+    const value = data[key];
+    if (value !== '' && value !== null && value !== undefined && value !== false) {
+      formData.append(key, value);
+    }
+  });
+
+  // Add honeypot field to prevent bots
+  formData.append('submit_time', Date.now().toString());
+
+  const response = await fetch(FORMSPREE_ENDPOINT, {
+    method: 'POST',
+    body: formData,
+    headers: {
+      'Accept': 'application/json'
+    }
+  });
+
+  if (!response.ok) {
+    const error = await response.json().catch(() => ({}));
+    throw new Error(error.message || 'Submission failed');
+  }
+
+  return await response.json();
+}
+
+export default sendToFormspree;

@@ -8,6 +8,7 @@ import Button from '../components/Button';
 import FormField from '../components/FormField';
 import Checkbox from '../components/Checkbox';
 import { useForm } from '../hooks/useForm';
+import { sendToFormspree } from '../services/formspreeService';
 import { getFAQsByCategory } from '../data/faqs';
 
 const services = [
@@ -88,9 +89,19 @@ export default function Home() {
   } = useForm(contactFormInitial, contactValidation);
 
   const onSubmit = async (formData) => {
-    console.log('Contact form submitted:', formData);
-    await new Promise(resolve => setTimeout(resolve, 1000));
-    resetForm();
+    const payload = {
+      ...formData,
+      consent: formData.consent ? 'Yes' : 'No',
+      _subject: 'Redbricks Contact Form Submission',
+      _template: 'table'
+    };
+
+    try {
+      await sendToFormspree(payload);
+      return true;
+    } catch (error) {
+      throw error;
+    }
   };
 
   return (
@@ -172,6 +183,16 @@ export default function Home() {
               <Button type="submit" className="w-full" size="lg" disabled={isSubmitting}>
                 {isSubmitting ? 'Sending...' : 'Send Message'}
               </Button>
+              {submitStatus === 'success' && (
+                <p className="text-sm text-center text-green-600 mt-2">
+                  Thank you! Your message has been sent successfully. We'll be in touch soon.
+                </p>
+              )}
+              {submitStatus === 'error' && (
+                <p className="text-sm text-center text-red-600 mt-2">
+                  Something went wrong. Please try again or call us directly.
+                </p>
+              )}
               <p className="text-xs text-center text-text-muted">
                 By submitting, you agree to our <Link to="/privacy" className="underline hover:text-primary">Privacy Policy</Link> and <Link to="/terms" className="underline hover:text-primary">Terms & Conditions</Link>.
               </p>
