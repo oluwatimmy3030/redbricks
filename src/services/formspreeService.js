@@ -1,36 +1,13 @@
-const FORMSUBMIT_ENDPOINT = 'https://formsubmit.co/yemipedro@yahoo.com';
+export async function sendViaMailto(data) {
+  const subject = encodeURIComponent('Redbricks Contact Form Submission');
+  const body = Object.keys(data)
+    .filter(key => data[key] !== '' && data[key] !== null && data[key] !== undefined && data[key] !== false)
+    .map(key => `${key}: ${data[key]}`)
+    .join('\n');
 
-export async function sendToFormSubmit(data) {
-  const formData = new FormData();
-  Object.keys(data).forEach(key => {
-    const value = data[key];
-    if (value !== '' && value !== null && value !== undefined && value !== false) {
-      formData.append(key, value);
-    }
-  });
-
-  // Add honeypot field to prevent bots
-  formData.append('submit_time', Date.now().toString());
-
-  // Tell FormSubmit to send an auto-confirmation back to the user
-  if (data.email) {
-    formData.append('_reply_to', data.email);
-  }
-
-  const response = await fetch(FORMSUBMIT_ENDPOINT, {
-    method: 'POST',
-    body: formData,
-    headers: {
-      'Accept': 'application/json'
-    }
-  });
-
-  if (!response.ok) {
-    const error = await response.json().catch(() => ({}));
-    throw new Error(error.message || error.error || 'Submission failed');
-  }
-
-  return await response.json();
+  const mailto = `mailto:yemipedro@yahoo.com?subject=${subject}&body=${body}`;
+  window.open(mailto, '_blank');
+  return { ok: true };
 }
 
-export default sendToFormSubmit;
+export default sendViaMailto;

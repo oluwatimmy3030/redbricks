@@ -8,7 +8,7 @@ import Button from '../components/Button';
 import FormField from '../components/FormField';
 import Checkbox from '../components/Checkbox';
 import { useForm } from '../hooks/useForm';
-import { sendToFormSubmit } from '../services/formspreeService';
+import { sendViaMailto } from '../services/formspreeService';
 import { getFAQsByCategory } from '../data/faqs';
 
 const services = [
@@ -91,13 +91,11 @@ export default function Home() {
   const onSubmit = async (formData) => {
     const payload = {
       ...formData,
-      consent: formData.consent ? 'Yes' : 'No',
-      _subject: 'Redbricks Contact Form Submission',
-      _template: 'table'
+      consent: formData.consent ? 'Yes' : 'No'
     };
 
     try {
-      await sendToFormSubmit(payload);
+      await sendViaMailto(payload);
       return true;
     } catch (error) {
       throw error;
