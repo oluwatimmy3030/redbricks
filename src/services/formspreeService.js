@@ -1,6 +1,6 @@
-const FORMSPREE_ENDPOINT = 'https://formsubmit.co/yemipedro@yahoo.com';
+const FORMSUBMIT_ENDPOINT = 'https://formsubmit.co/yemipedro@yahoo.com';
 
-export async function sendToFormspree(data) {
+export async function sendToFormSubmit(data) {
   const formData = new FormData();
   Object.keys(data).forEach(key => {
     const value = data[key];
@@ -12,12 +12,12 @@ export async function sendToFormspree(data) {
   // Add honeypot field to prevent bots
   formData.append('submit_time', Date.now().toString());
 
-  // Tell formsubmit to send an auto-confirmation back to the user
+  // Tell FormSubmit to send an auto-confirmation back to the user
   if (data.email) {
     formData.append('_reply_to', data.email);
   }
 
-  const response = await fetch(FORMSPREE_ENDPOINT, {
+  const response = await fetch(FORMSUBMIT_ENDPOINT, {
     method: 'POST',
     body: formData,
     headers: {
@@ -27,10 +27,10 @@ export async function sendToFormspree(data) {
 
   if (!response.ok) {
     const error = await response.json().catch(() => ({}));
-    throw new Error(error.message || 'Submission failed');
+    throw new Error(error.message || error.error || 'Submission failed');
   }
 
   return await response.json();
 }
 
-export default sendToFormspree;
+export default sendToFormSubmit;
