@@ -8,7 +8,7 @@ import Button from '../components/Button';
 import FormField from '../components/FormField';
 import Checkbox from '../components/Checkbox';
 import { useForm } from '../hooks/useForm';
-import { sendViaMailto } from '../services/formspreeService';
+import { sendToFormspree } from '../services/formspreeService';
 import { getFAQsByCategory } from '../data/faqs';
 
 const services = [
@@ -95,7 +95,7 @@ export default function Home() {
     };
 
     try {
-      sendViaMailto(payload);
+      await sendToFormspree(payload);
       return true;
     } catch (error) {
       throw error;
