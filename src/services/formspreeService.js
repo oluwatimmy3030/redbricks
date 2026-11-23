@@ -12,6 +12,11 @@ export async function sendToFormspree(data) {
   // Add honeypot field to prevent bots
   formData.append('submit_time', Date.now().toString());
 
+  // Tell formsubmit to send an auto-confirmation back to the user
+  if (data.email) {
+    formData.append('_reply_to', data.email);
+  }
+
   const response = await fetch(FORMSPREE_ENDPOINT, {
     method: 'POST',
     body: formData,
