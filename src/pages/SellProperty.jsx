@@ -93,7 +93,7 @@ export default function SellProperty() {
     <>
       <Hero
         title="Sell Your Property With Redbricks"
-        subtitle="Get a fair cash offer within 24 hours. No fees, no chains, complete in 14-28 days. Any condition, any location."
+        subtitle="Get a fair cash offer within 24 hours. No fees, no chains, complete in 7-30 days. Any condition, any location."
         ctaPrimary={{ label: 'Submit Your Property', href: '#submit-form' }}
         backgroundImage="https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?w=1920&q=80"
       />

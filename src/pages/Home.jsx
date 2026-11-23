@@ -15,7 +15,7 @@ const services = [
   {
     icon: HomeIcon,
     title: 'Sell Your Property',
-    description: 'Get a fair cash offer within 24 hours. No fees, no chains, complete in 14-28 days.',
+    description: 'Get a fair cash offer within 24 hours. No fees, no chains, complete in 7-30 days.',
     href: '/sell-property',
     cta: 'Get Your Offer'
   },
@@ -49,7 +49,7 @@ const steps = [
   {
     number: '03',
     title: 'Complete Fast',
-    description: 'We handle everything. Typical completion in 14-28 days, or on your timeline.'
+    description: 'We handle everything. Typical completion in 7-30 days, or on your timeline.'
   }
 ];
 
@@ -253,7 +253,7 @@ export default function Home() {
               <Clock className="w-7 h-7" aria-hidden="true" />
             </div>
             <h3 className="text-lg font-semibold text-primary mb-2">Fast Completion</h3>
-            <p className="text-text-muted">Typically 14-28 days. We work to your timeline, not ours.</p>
+            <p className="text-text-muted">Typically 7-30 days. We work to your timeline, not ours.</p>
           </div>
           <div className="text-center p-6">
             <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-4 text-primary">
