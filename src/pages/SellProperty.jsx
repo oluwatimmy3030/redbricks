@@ -10,6 +10,7 @@ import Textarea from '../components/Textarea';
 import Select from '../components/Select';
 import Checkbox from '../components/Checkbox';
 import FileInput from '../components/FileInput';
+import { sendToFormspree } from '../services/formspreeService';
 import { useForm } from '../hooks/useForm';
 import { getFAQsByCategory } from '../data/faqs';
 import { propertyTypes, propertyConditions } from '../config/siteConfig';
@@ -81,8 +82,17 @@ export default function SellProperty() {
   } = useForm(initialValues, validationRules);
 
   const onSubmit = async (formData) => {
-    console.log('Form submitted:', formData);
-    await new Promise(resolve => setTimeout(resolve, 1000));
+    const payload = {
+      ...formData,
+      consent: formData.consent ? 'Yes' : 'No'
+    };
+
+    try {
+      await sendToFormspree(payload);
+      return true;
+    } catch (error) {
+      throw error;
+    }
   };
 
   const handleFileChange = (name, file) => {

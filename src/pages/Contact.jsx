@@ -7,6 +7,7 @@ import FormField from '../components/FormField';
 import Textarea from '../components/Textarea'
 import Select from '../components/Select'
 import Checkbox from '../components/Checkbox';
+import { sendToFormspree } from '../services/formspreeService';
 import { useForm } from '../hooks/useForm';
 import { siteConfig } from '../config/siteConfig';
 
@@ -53,8 +54,17 @@ export default function Contact() {
   } = useForm(initialValues, validationRules);
 
   const onSubmit = async (formData) => {
-    console.log('Contact form submitted:', formData);
-    await new Promise(resolve => setTimeout(resolve, 1000));
+    const payload = {
+      ...formData,
+      consent: formData.consent ? 'Yes' : 'No'
+    };
+
+    try {
+      await sendToFormspree(payload);
+      return true;
+    } catch (error) {
+      throw error;
+    }
   };
 
   return (

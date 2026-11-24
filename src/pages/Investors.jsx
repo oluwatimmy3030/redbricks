@@ -8,6 +8,7 @@ import Button from '../components/Button';
 import FormField from '../components/FormField';
 import Select from '../components/Select'
 import Checkbox from '../components/Checkbox';
+import { sendToFormspree } from '../services/formspreeService';
 import { useForm } from '../hooks/useForm';
 import { getFAQsByCategory } from '../data/faqs';
 import { investmentStrategies } from '../config/siteConfig';
@@ -85,8 +86,17 @@ export default function Investors() {
   } = useForm(initialValues, validationRules);
 
   const onSubmit = async (formData) => {
-    console.log('Investor registration submitted:', formData);
-    await new Promise(resolve => setTimeout(resolve, 1000));
+    const payload = {
+      ...formData,
+      consent: formData.consent ? 'Yes' : 'No'
+    };
+
+    try {
+      await sendToFormspree(payload);
+      return true;
+    } catch (error) {
+      throw error;
+    }
   };
 
   return (
