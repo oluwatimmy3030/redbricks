@@ -24,6 +24,7 @@ const Button = forwardRef(({
   };
 
   const sizes = {
+    // lg: 'px-8 py-4 text-lg rounded-xl',
     sm: 'px-4 py-2 text-sm rounded-md',
     md: 'px-6 py-3.5 text-base rounded-lg',
     lg: 'px-8 py-4 text-lg rounded-xl'

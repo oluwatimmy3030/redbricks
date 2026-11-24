@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, ChevronDown, Home } from 'lucide-react';
+import { Menu, X, ChevronDown } from 'lucide-react';
 import { siteConfig } from '../config/siteConfig';
 import Button from './Button';
 
@@ -61,9 +61,7 @@ const Navbar = () => {
       <nav ref={navRef} className="container relative z-50" aria-label="Main navigation">
         <div className="flex items-center justify-between h-16 lg:h-20">
           <Link to="/" className="flex items-center gap-2" aria-label="Redbricks Home">
-            <div className="w-10 h-10 rounded-lg bg-secondary flex items-center justify-center flex-shrink-0">
-              <Home className="w-6 h-6 text-surface" aria-hidden="true" />
-            </div>
+            <img src="/redbricks-logo.png" alt="Redbricks Logo" className="h-10 w-auto flex-shrink-0" />
             <span className="text-xl font-bold text-primary">{siteConfig.name}</span>
           </Link>
 

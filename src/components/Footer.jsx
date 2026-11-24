@@ -11,9 +11,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 lg:gap-8">
           <div className="lg:col-span-2">
             <RouterLink to="/" className="flex items-center gap-2 mb-6" aria-label="Redbricks Home">
-              <div className="w-10 h-10 rounded-lg bg-secondary flex items-center justify-center">
-                <Home className="w-6 h-6" aria-hidden="true" />
-              </div>
+              <img src="/redbricks-logo.png" alt="Redbricks Logo" className="h-10 w-auto" />
               <span className="text-xl font-bold">{siteConfig.name}</span>
             </RouterLink>
             <p className="text-text-light text-base max-w-xs mb-8 leading-relaxed">
